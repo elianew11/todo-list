@@ -22,7 +22,7 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   tarefas: any[] = [];
   novaTarefa = '';
-  api = 'https://miniature-adventure-v6rwx64476r5cp57-8000.app.github.dev/api/todos/'; // Ajustaremos isso depois
+  api = 'https://todo-list-4tjb.onrender.com/api/todos/'; // Ajustaremos isso depois
 
   constructor(private http: HttpClient) {
     this.listar();

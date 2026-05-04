@@ -46,6 +46,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware', # <--- Sempre em primeiro
     'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -131,3 +132,5 @@ CSRF_TRUSTED_ORIGINS = [
     'https://*.app.github.dev',
     'https://*.github.dev'
 ]
+
+STATIC_ROOT = 'staticfiles'
